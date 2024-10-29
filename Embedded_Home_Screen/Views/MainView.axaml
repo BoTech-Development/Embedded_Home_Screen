@@ -1,0 +1,135 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:materialIcons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+             xmlns:vm="clr-namespace:Embedded_Home_Screen.ViewModels"
+             xmlns:controls="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
+           
+			 xmlns:dialogHostAvalonia="clr-namespace:DialogHostAvalonia;assembly=DialogHost.Avalonia"
+			 xmlns:updateDialogModels="clr-namespace:Embedded_Home_Screen.ViewModels.Dialogs.Update"
+			 x:Class="Embedded_Home_Screen.Views.MainView"
+			 x:DataType="vm:MainViewModel">
+	<Design.DataContext>
+    <!-- This only sets the DataContext for the previewer in an IDE,
+         to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+    <vm:MainViewModel />
+  </Design.DataContext>
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="auto"/>
+			<RowDefinition Height="auto"/>
+			<RowDefinition />
+		</Grid.RowDefinitions>
+		<Grid Grid.Row="0">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="auto"/>
+				<ColumnDefinition />
+				<ColumnDefinition Width="auto"/>
+			</Grid.ColumnDefinitions>
+			<Image Source="/Assets/BoTechLogoNew.png" Width="256"/>
+			<StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+				<TextBlock  Text="{Binding CurrentDate}"></TextBlock>
+				<TextBlock  Text="{Binding CurrentTime}"></TextBlock>
+			</StackPanel>
+			
+			<Button Grid.Column="2">
+				<StackPanel Orientation="Horizontal">
+					<materialIcons:MaterialIcon Kind="AccountCircle"/>
+					<materialIcons:MaterialIcon Kind="Wifi"/>
+					<materialIcons:MaterialIcon Kind="Update"/>
+				</StackPanel>
+				<Button.Flyout>
+					<MenuFlyout>
+						<MenuItem Header="My Account">
+							<MenuItem.Icon>
+								<materialIcons:MaterialIcon Kind="AccountCircle"/>
+							</MenuItem.Icon>
+						</MenuItem>
+						<MenuItem Header="Wifi Settings">
+							<MenuItem.Icon>
+								<materialIcons:MaterialIcon Kind="Wifi"/>
+							</MenuItem.Icon>
+						</MenuItem>
+						<MenuItem Header="Aply Update Now">
+							<MenuItem.Icon>
+								<materialIcons:MaterialIcon Kind="Update"/>
+							</MenuItem.Icon>
+						</MenuItem>
+					</MenuFlyout>
+				</Button.Flyout>
+			</Button>
+		</Grid>
+		<WrapPanel Grid.Row="1" Orientation="Horizontal" >
+			<Button Margin="10 10 0 0" Command="{Binding ShutDownCommand}">
+				<StackPanel>
+					<materialIcons:MaterialIcon Kind="PowerStandby" Width="128" Height="128"/>
+					<TextBlock HorizontalAlignment="Center">Power Off</TextBlock>
+				</StackPanel>
+			</Button>
+			<Button Margin="10 10 0 0">
+				<StackPanel>
+					<materialIcons:MaterialIcon Kind="Restart" Width="128" Height="128"/>
+					<TextBlock HorizontalAlignment="Center">Restart</TextBlock>
+				</StackPanel>
+			</Button>
+			<Button Margin="10 10 0 0">
+				<StackPanel>
+					<materialIcons:MaterialIcon Kind="Settings" Width="128" Height="128"/>
+					<TextBlock HorizontalAlignment="Center">Settings</TextBlock>
+				</StackPanel>
+			</Button>
+			<Button Margin="10 10 0 0" Command="{Binding ShowAboutDialogCommand}">
+				<StackPanel>
+					<materialIcons:MaterialIcon Kind="InfoCircle" Width="128" Height="128"/>
+					<TextBlock HorizontalAlignment="Center">About</TextBlock>
+				</StackPanel>
+			</Button>
+			<Button Margin="10 10 0 0">
+				<StackPanel>
+					<materialIcons:MaterialIcon Kind="PlayCircle"  Width="128" Height="128"/>
+					<TextBlock HorizontalAlignment="Center">Start/Stop Machine</TextBlock>
+				</StackPanel>
+			</Button>
+			<Button Margin="10 10 0 0" Command="{Binding CheckForUpdatesCommand}">
+				<StackPanel>
+					<materialIcons:MaterialIcon Kind="Update" Width="128" Height="128"/>
+					<TextBlock HorizontalAlignment="Center">Check for Updates</TextBlock>
+				</StackPanel>
+			</Button>
+		</WrapPanel>
+		<Grid Grid.Row="2" Background="Gray" Margin="0 10 0 0" VerticalAlignment="Bottom">
+			<Grid.RowDefinitions></Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="auto"/>
+				<ColumnDefinition Width="auto"/>
+			</Grid.ColumnDefinitions>
+			<Button >
+				<StackPanel Orientation="Horizontal">
+					<controls:Card CornerRadius="24" Padding="4" Margin="4" HorizontalAlignment="Center" VerticalAlignment="Center">
+						<ProgressBar Classes="circular" IsIndeterminate="{Binding IsIndeterminate}" Value="{Binding Percentage}" />
+					</controls:Card>
+					<TextBlock  VerticalAlignment="Center">Status:</TextBlock>
+					<TextBlock VerticalAlignment="Center" Text="{Binding Status}"></TextBlock>
+				</StackPanel>
+				<Button.FlowDirection>
+					2
+				</Button.FlowDirection>
+				<Button.Flyout>
+					<MenuFlyout>
+						<MenuItem Header="Test"></MenuItem>
+					</MenuFlyout>
+				</Button.Flyout>
+			</Button>
+		</Grid>
+		<!--Window Dialogs:-->
+		<!--Update Available Dialog-->
+		<dialogHostAvalonia:DialogHost Identifier="MSG_Box:NewUpdateAvailable">
+
+		</dialogHostAvalonia:DialogHost>
+	</Grid>
+	
+	
+	
+</UserControl>

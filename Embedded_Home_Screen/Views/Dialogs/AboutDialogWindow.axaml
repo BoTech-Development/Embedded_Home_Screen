@@ -1,0 +1,26 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:vm="clr-namespace:Embedded_Home_Screen.ViewModels.Dialogs"
+		x:DataType="vm:AboutDialogWindowViewModel"
+        x:Class="Embedded_Home_Screen.AboutDialogWindow"
+        Title="About"
+		SizeToContent="WidthAndHeight"
+		WindowStartupLocation="CenterScreen">
+	
+	<StackPanel>
+		<Image Source="/Assets/BoTechLogoNew.png" Width="256"></Image>
+		<TextBlock HorizontalAlignment="Center" FontSize="24" Foreground="#00D748">Embedded</TextBlock>
+		<TextBlock HorizontalAlignment="Center">On behalf of:</TextBlock>
+		<StackPanel>
+			<Image Source="/Assets/Logo_ngrav.png" Width="128"/>
+		</StackPanel>
+		<TextBlock Margin="0 0 20 0" xml:space="preserve" TextAlignment="Center">
+			Embedded Home Screen APP
+			Version: v1.0.1.Alpha
+			Copyright: ©2024 www.botech.dev All Rights Reserved!
+		</TextBlock>
+		
+	</StackPanel>
+</Window>
