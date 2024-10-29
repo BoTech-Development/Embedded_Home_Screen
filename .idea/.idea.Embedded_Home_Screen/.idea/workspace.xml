@@ -7,11 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba871e33-8344-41e6-bb6c-aa0a85edd11e" name="Changes" comment="Added Seconds to the Timer-Header.">
+    <list default="true" id="ba871e33-8344-41e6-bb6c-aa0a85edd11e" name="Changes" comment="Fixed Issue #1 hopefully...">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Embedded_Home_Screen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Embedded_Home_Screen/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Embedded_Home_Screen.Desktop/bin/Debug/net8.0/Embedded_Home_Screen.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Embedded_Home_Screen.Desktop/bin/Debug/net8.0/Embedded_Home_Screen.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Embedded_Home_Screen.Desktop/bin/Debug/net8.0/update.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Embedded_Home_Screen/Controller/UpdateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Embedded_Home_Screen/Controller/UpdateController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Embedded_Home_Screen/Views/MainView.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Embedded_Home_Screen/Views/MainView.axaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Embedded_Home_Screen/bin/Debug/net8.0/Embedded_Home_Screen.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Embedded_Home_Screen/bin/Debug/net8.0/Embedded_Home_Screen.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1730201988206</updated>
       <workItem from="1730201989900" duration="2609000" />
-      <workItem from="1730208525701" duration="5520000" />
+      <workItem from="1730208525701" duration="7752000" />
     </task>
     <task id="LOCAL-00001" summary="Minor Updates">
       <option name="closed" value="true" />
@@ -123,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730214903480</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed Issue #1 hopefully...">
+      <option name="closed" value="true" />
+      <created>1730217457758</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730217457758</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +156,7 @@
     <MESSAGE value="Minor Updates" />
     <MESSAGE value="Added Binaries" />
     <MESSAGE value="Added Seconds to the Timer-Header." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Seconds to the Timer-Header." />
+    <MESSAGE value="Fixed Issue #1 hopefully..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Issue #1 hopefully..." />
   </component>
 </project>

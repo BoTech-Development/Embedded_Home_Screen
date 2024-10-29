@@ -32,7 +32,7 @@ namespace Embedded_Home_Screen.Controller
         private string FetchedFileName = string.Empty;
         public UpdateController(MainViewModel model)
         {
-            ThisVersion = Version.getVersionFromString("v1.0.1");
+            ThisVersion = Version.getVersionFromString("v1.0.2");
             mainViewModel = model;
             client = new GitHubClient(new ProductHeaderValue("BoTech.dev-Embedded_Home_Screen"));
 
@@ -43,7 +43,8 @@ namespace Embedded_Home_Screen.Controller
         }
         private void CleanUp()
         {
-            string? dir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).FullName;
+            string? dir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.FullName;
+            mainViewModel.Status = "Cleaning up: Dir: " + dir;
             if (dir != null)
             {
                 DirectoryInfo dirInfo = new DirectoryInfo(dir);
@@ -151,8 +152,8 @@ namespace Embedded_Home_Screen.Controller
                 // Change Startup.sh which will be called by a Service
                 // Change to the correct Path
                 string startupContent = "#!/bin/bash";
-                startupContent += "cd /";
-                startupContent += "cd " + newDir;
+                startupContent += "\n cd /";
+                startupContent += "\n cd " + newDir;
                 startupContent += "\n dotnet Embedded_Home_Screen.Desktop.dll";
                 string? parentDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).FullName;
                 if (parentDir != null)

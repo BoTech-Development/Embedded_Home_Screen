@@ -32,7 +32,7 @@ public partial class MainView : UserControl
             CommandParameter = "MSG_Box:NewUpdateAvailable;Param:_Blank_",
             Margin = new Avalonia.Thickness(10, 0, 0, 0)
         };
-        updateBtn.Click += HandleMsgBoxBtnClick;
+ 
 
         StackPanel content = new StackPanel()
         {
