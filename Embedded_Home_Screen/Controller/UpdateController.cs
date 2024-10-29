@@ -144,7 +144,8 @@ namespace Embedded_Home_Screen.Controller
 
                 // Change Startup.sh which will be called by a Service
                 // Change to the correct Path
-                string startupContent = "cd /";
+                string startupContent = "#!/bin/bash";
+                startupContent +="cd /";
                 startupContent += "cd " + newDir;
                 startupContent += "\n dotnet Embedded_Home_Screen.Desktop.dll";
                 File.WriteAllText(Path.Combine(newDir.Replace(NextVersion.ToString() + "/", ""), "Startup.sh"), startupContent);
@@ -160,7 +161,6 @@ namespace Embedded_Home_Screen.Controller
             webClient.DownloadProgressChanged += WebClient_DownloadProgressChanged;
             webClient.DownloadFile(url, destPath);
         }
-
         private void WebClient_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
         {
             mainViewModel.IsIndeterminate = false;

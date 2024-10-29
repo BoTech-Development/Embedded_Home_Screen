@@ -91,7 +91,11 @@ public class MainViewModel : ViewModelBase
             if(canRestartToUpdate) Restart();
         });
 
+        
+        // Update Controller Clean up the /BoTech/Embedded/ Directory Automatically int the ctor
         UpdateController = new UpdateController(this);
+        
+        
         this.mainView = mainView;
 
         // Timer:
@@ -103,8 +107,8 @@ public class MainViewModel : ViewModelBase
 
     private void ClockUpdateTimer_Elapsed(object? sender, System.Timers.ElapsedEventArgs e)
     {
-        //CurrentTime = DateTime.Now.Hour + ":" + DateTime.Now.Minute + ":" + DateTime.Now.Second;
-        CurrentTime = TimeOnly.FromDateTime(DateTime.Now).ToString();
+        CurrentTime = DateTime.Now.Hour + ":" + DateTime.Now.Minute + ":" + DateTime.Now.Second;
+        //CurrentTime = TimeOnly.FromDateTime(DateTime.Now).ToString();
         CurrentDate = DateOnly.FromDateTime(DateTime.Now).ToString();
     }
 

@@ -7,7 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba871e33-8344-41e6-bb6c-aa0a85edd11e" name="Changes" comment="" />
+    <list default="true" id="ba871e33-8344-41e6-bb6c-aa0a85edd11e" name="Changes" comment="Added Binaries">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Embedded_Home_Screen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Embedded_Home_Screen/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Embedded_Home_Screen.Desktop/bin/Debug/net8.0/Embedded_Home_Screen.Desktop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Embedded_Home_Screen.Desktop/bin/Debug/net8.0/Embedded_Home_Screen.Desktop.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Embedded_Home_Screen.Desktop/bin/Debug/net8.0/Embedded_Home_Screen.Desktop.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Embedded_Home_Screen.Desktop/bin/Debug/net8.0/Embedded_Home_Screen.Desktop.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Embedded_Home_Screen.Desktop/bin/Debug/net8.0/Embedded_Home_Screen.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Embedded_Home_Screen.Desktop/bin/Debug/net8.0/Embedded_Home_Screen.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Embedded_Home_Screen/Controller/UpdateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Embedded_Home_Screen/Controller/UpdateController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Embedded_Home_Screen/ViewModels/MainViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Embedded_Home_Screen/ViewModels/MainViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Embedded_Home_Screen/bin/Debug/net8.0/Embedded_Home_Screen.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Embedded_Home_Screen/bin/Debug/net8.0/Embedded_Home_Screen.dll" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,18 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "BoTech-Development"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;BoTech-Development&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/BoTech-Development/Embedded_Home_Screen.git",
-    "accountId": "da82df8a-3505-48eb-bd84-e9ed30c51d37"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/BoTech-Development/Embedded_Home_Screen.git&quot;,
+    &quot;accountId&quot;: &quot;da82df8a-3505-48eb-bd84-e9ed30c51d37&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2e49d132ea68ff47071c64476ae29138fa965dc555ef7c3f4991586431de241/Task.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6b227eb303238834af2c3fb122a7e882e9349736231bacc21e165f6c9a98d45/ObservableBase.cs" root0="FORCE_HIGHLIGHTING" />
@@ -40,28 +48,28 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/fff6e1ed391cf092a5287dc447d5c7b97ac5e542cb81df3d3126ff5b7d3d71/TailRecursiveSink.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2o6tjSOKxwUyNd2XDzY2N9HX3OA" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.Embedded_Home_Screen.Desktop.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.Embedded_Home_Screen.Desktop.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Embedded_Home_Screen.Desktop" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -91,6 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1730201988206</updated>
       <workItem from="1730201989900" duration="2609000" />
+      <workItem from="1730208525701" duration="1953000" />
     </task>
     <task id="LOCAL-00001" summary="Minor Updates">
       <option name="closed" value="true" />
@@ -100,7 +109,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730208403602</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Binaries">
+      <option name="closed" value="true" />
+      <created>1730208582953</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730208582953</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,7 +139,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Minor Updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor Updates" />
+    <MESSAGE value="Added Binaries" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Binaries" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -155,13 +173,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Embedded_Home_Screen/ViewModels/MainViewModel.cs</url>
-          <line>112</line>
+          <line>116</line>
           <properties documentPath="C:\Users\fteet\OneDrive\Dokumente\Visual Studio 2022\Projects\BoTech\Embedded\Embedded_Home_Screen\Embedded_Home_Screen\ViewModels\MainViewModel.cs" containingFunctionPresentation="Method 'CheckForUpdates'">
             <startOffsets>
-              <option value="3527" />
+              <option value="3651" />
             </startOffsets>
             <endOffsets>
-              <option value="3569" />
+              <option value="3693" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
