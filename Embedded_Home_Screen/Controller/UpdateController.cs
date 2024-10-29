@@ -69,10 +69,10 @@ namespace Embedded_Home_Screen.Controller
         /// </returns>
         public bool CheckForUpdates(bool includePreRelease)
         {
-            mainViewModel.Status = "Get: api.github.com (Releases for VarnishMachineController)";
+            mainViewModel.Status = "Get: api.github.com (Releases for Embedded_Home_Screen)";
             mainViewModel.IsIndeterminate = false;
            
-            IReadOnlyList<Release> allReleases = client.Repository.Release.GetAll("BoTech-Development", "VarnishMachineController").Result;
+            IReadOnlyList<Release> allReleases = client.Repository.Release.GetAll("BoTech-Development", "Embedded_Home_Screen").Result;
 
             mainViewModel.Percentage = 33;
             if (allReleases.Count > 0)
