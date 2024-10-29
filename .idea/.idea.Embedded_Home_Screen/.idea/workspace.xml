@@ -7,11 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba871e33-8344-41e6-bb6c-aa0a85edd11e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Embedded_Home_Screen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Embedded_Home_Screen/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Embedded_Home_Screen/Controller/UpdateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Embedded_Home_Screen/Controller/UpdateController.cs" afterDir="false" />
-    </list>
+    <list default="true" id="ba871e33-8344-41e6-bb6c-aa0a85edd11e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +19,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "BoTech-Development"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/BoTech-Development/Embedded_Home_Screen.git",
+    "accountId": "da82df8a-3505-48eb-bd84-e9ed30c51d37"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2e49d132ea68ff47071c64476ae29138fa965dc555ef7c3f4991586431de241/Task.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6b227eb303238834af2c3fb122a7e882e9349736231bacc21e165f6c9a98d45/ObservableBase.cs" root0="FORCE_HIGHLIGHTING" />
@@ -82,8 +90,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730201988206</updated>
-      <workItem from="1730201989900" duration="2527000" />
+      <workItem from="1730201989900" duration="2609000" />
     </task>
+    <task id="LOCAL-00001" summary="Minor Updates">
+      <option name="closed" value="true" />
+      <created>1730208403602</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730208403602</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +121,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Minor Updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor Updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
