@@ -7,13 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba871e33-8344-41e6-bb6c-aa0a85edd11e" name="Changes" comment="Added Binaries">
+    <list default="true" id="ba871e33-8344-41e6-bb6c-aa0a85edd11e" name="Changes" comment="Added Seconds to the Timer-Header.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Embedded_Home_Screen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Embedded_Home_Screen/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Embedded_Home_Screen.Desktop/bin/Debug/net8.0/Embedded_Home_Screen.Desktop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Embedded_Home_Screen.Desktop/bin/Debug/net8.0/Embedded_Home_Screen.Desktop.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Embedded_Home_Screen.Desktop/bin/Debug/net8.0/Embedded_Home_Screen.Desktop.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Embedded_Home_Screen.Desktop/bin/Debug/net8.0/Embedded_Home_Screen.Desktop.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Embedded_Home_Screen.Desktop/bin/Debug/net8.0/Embedded_Home_Screen.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Embedded_Home_Screen.Desktop/bin/Debug/net8.0/Embedded_Home_Screen.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Embedded_Home_Screen.Desktop/bin/Debug/net8.0/update.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Embedded_Home_Screen/Controller/UpdateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Embedded_Home_Screen/Controller/UpdateController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Embedded_Home_Screen/ViewModels/MainViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Embedded_Home_Screen/ViewModels/MainViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Embedded_Home_Screen/bin/Debug/net8.0/Embedded_Home_Screen.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Embedded_Home_Screen/bin/Debug/net8.0/Embedded_Home_Screen.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1730201988206</updated>
       <workItem from="1730201989900" duration="2609000" />
-      <workItem from="1730208525701" duration="1953000" />
+      <workItem from="1730208525701" duration="5520000" />
     </task>
     <task id="LOCAL-00001" summary="Minor Updates">
       <option name="closed" value="true" />
@@ -117,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730208582953</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Seconds to the Timer-Header.">
+      <option name="closed" value="true" />
+      <created>1730214903480</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730214903480</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,51 +146,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Minor Updates" />
     <MESSAGE value="Added Binaries" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Binaries" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Embedded_Home_Screen/Controller/UpdateController.cs</url>
-          <line>74</line>
-          <properties documentPath="C:\Users\fteet\OneDrive\Dokumente\Visual Studio 2022\Projects\BoTech\Embedded\Embedded_Home_Screen\Embedded_Home_Screen\Controller\UpdateController.cs" containingFunctionPresentation="Method 'CheckForUpdates'">
-            <startOffsets>
-              <option value="2457" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2580" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Embedded_Home_Screen/Controller/UpdateController.cs</url>
-          <line>71</line>
-          <properties documentPath="C:\Users\fteet\OneDrive\Dokumente\Visual Studio 2022\Projects\BoTech\Embedded\Embedded_Home_Screen\Embedded_Home_Screen\Controller\UpdateController.cs" containingFunctionPresentation="Method 'CheckForUpdates'">
-            <startOffsets>
-              <option value="2300" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2381" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Embedded_Home_Screen/ViewModels/MainViewModel.cs</url>
-          <line>116</line>
-          <properties documentPath="C:\Users\fteet\OneDrive\Dokumente\Visual Studio 2022\Projects\BoTech\Embedded\Embedded_Home_Screen\Embedded_Home_Screen\ViewModels\MainViewModel.cs" containingFunctionPresentation="Method 'CheckForUpdates'">
-            <startOffsets>
-              <option value="3651" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3693" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Added Seconds to the Timer-Header." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Seconds to the Timer-Header." />
   </component>
 </project>

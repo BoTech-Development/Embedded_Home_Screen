@@ -43,23 +43,27 @@ namespace Embedded_Home_Screen.Controller
         }
         private void CleanUp()
         {
-            string dir = AppDomain.CurrentDomain.BaseDirectory;
-            DirectoryInfo dirInfo = new DirectoryInfo(dir);
-            foreach (DirectoryInfo directory in dirInfo.GetDirectories())
+            string? dir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).FullName;
+            if (dir != null)
             {
-                // Dir has the Format: vx.y.z.?p
-                if (directory.Name.IndexOf('v') != -1)
+                DirectoryInfo dirInfo = new DirectoryInfo(dir);
+                foreach (DirectoryInfo directory in dirInfo.GetDirectories())
                 {
-                    if (directory.Name.IndexOf('.') != -1)
+                    // Dir has the Format: vx.y.z.?p
+                    if (directory.Name.IndexOf('v') != -1)
                     {
-                        if (!directory.Name.Equals(ThisVersion.ToString()))
+                        if (directory.Name.IndexOf('.') != -1)
                         {
-                            directory.Delete();
+                            if (!directory.Name.Equals(ThisVersion.ToString()))
+                            {
+                                directory.Delete();
+                            }
                         }
                     }
                 }
             }
         }
+    
         /// <summary>
         /// This Method checks if there is a newer Version to thisVersion available, in the related Repository to this App on github.com.
         /// 
@@ -126,13 +130,15 @@ namespace Embedded_Home_Screen.Controller
         }
         public void AplyUpdate()
         {
-            ReleaseAsset updateFile;
-            if((updateFile = NextVersion.RelatedRelease.Assets.Where(a => a.Name.Equals("update.zip")).FirstOrDefault()) != null)
+            ReleaseAsset? updateFile;
+            if ((updateFile = NextVersion.RelatedRelease.Assets.Where(a => a.Name.Equals("update.zip")).FirstOrDefault()) != null)
             {
                 string destPath = AppDomain.CurrentDomain.BaseDirectory;
 
-                string newDir = destPath.Replace(ThisVersion.ToString() + "/", NextVersion.ToString() + "/"); // Remove for e.g. the /v1.0.1/ Folder.
-                
+                string newDir =
+                    destPath.Replace(ThisVersion.ToString() + "/",
+                        NextVersion.ToString() + "/"); // Remove for e.g. the /v1.0.1/ Folder.
+
 
                 Directory.CreateDirectory(newDir); // Create new Version Folder
                 destPath = newDir + "/" + updateFile.Name; // Create new File
@@ -145,10 +151,14 @@ namespace Embedded_Home_Screen.Controller
                 // Change Startup.sh which will be called by a Service
                 // Change to the correct Path
                 string startupContent = "#!/bin/bash";
-                startupContent +="cd /";
+                startupContent += "cd /";
                 startupContent += "cd " + newDir;
                 startupContent += "\n dotnet Embedded_Home_Screen.Desktop.dll";
-                File.WriteAllText(Path.Combine(newDir.Replace(NextVersion.ToString() + "/", ""), "Startup.sh"), startupContent);
+                string? parentDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).FullName;
+                if (parentDir != null)
+                {
+                    File.WriteAllText(Path.Combine(parentDir, "Startup.sh"), startupContent);
+                }
 
                 // Restart to Update.
                 
